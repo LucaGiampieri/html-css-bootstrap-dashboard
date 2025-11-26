@@ -84,28 +84,19 @@
                 <!-- Literary Genre Section -->
                 <div class="col-12 col-sm-4">
                     <div class="mb-3">
-                        <label for="literary-genre" class="form-label fw-bold">Genere</label>
-                        <div class="dropdown">
-                            <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button"
-                                data-bs-toggle="dropdown" id="literary-genre" aria-expanded="false">
-                                Scegli il genere
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="#">Saggistica</a></li>
-                                <li><a class="dropdown-item" href="#">Horror</a></li>
-                                <li><a class="dropdown-item" href="#">Thriller</a></li>
-                                <li><a class="dropdown-item" href="#">Giallo</a></li>
-                                <li><a class="dropdown-item" href="#">Rosa</a></li>
-                                <li><a class="dropdown-item" href="#">Fantasy</a></li>
-                                <li><a class="dropdown-item" href="#">Fantascenza</a></li>
-                                <li><a class="dropdown-item" href="#">Fumetti</a></li>
-                                <li><a class="dropdown-item" href="#">Graphic Novel</a></li>
-                                <li><a class="dropdown-item" href="#">Musica</a></li>
-                                <li><a class="dropdown-item" href="#">Spiritualità</a></li>
-                                <li><a class="dropdown-item" href="#">Young</a></li>
-                                <li><a class="dropdown-item" href="#">Young-adult</a></li>
-                            </ul>
-                        </div>
+                        <label for="genre" class="form-label fw-bold">Genere</label>
+                        <select class="form-select" id="genre" aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">Saggistica</option>
+                            <option value="2">Horror</option>
+                            <option value="3">Thriller</option>
+                            <option value="4">Fantasy</option>
+                            <option value="5">Fantascienza</option>
+                            <option value="6">Rosa</option>
+                            <option value="7">Giallo</option>
+                            <option value="8">Aventura</option>
+                            <option value="9">Graphic Novel</option>
+                        </select>
                     </div>
                 </div>
                 <!-- Year of Publication Section -->
@@ -129,14 +120,14 @@
                 <div class="mb-3">
                     <label for="note" class="form-label fw-bold">Note</label>
                     <div class="form-floating">
-                        <textarea class="form-control" placeholder="Inserisci evebtuali note sul libro"
-                            id="note" style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Inserisci evebtuali note sul libro" id="note"
+                            style="height: 100px"></textarea>
                         <label for="note">Inserisci evebtuali note sul libro</label>
                     </div>
                 </div>
             </div>
             <!-- Digital Disponibility Section -->
-            <div class="form-check">
+            <div class="form-check my-3">
                 <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                 <label class="form-check-label" for="checkDefault">
                     Disponibile anche in digitale
