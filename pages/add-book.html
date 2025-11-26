@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -24,8 +23,8 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <!-- Navbar Logo -->
-                <a class="navbar-brand" href="#">
-                    <img src="../img/duck.png" alt="Duck Logo" height="50" width="auto">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/duck.png" alt="Duck Logo" height="50" width="50">
                 </a>
                 <!-- Navbar Hamburger Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -55,34 +54,99 @@
     </header>
 
     <!-- Main -->
-    <main class="container my-4">
-        <!-- New Book Section -->
-        <h1>Nuovo Libro</h1>
-        <div class="container">
+    <main>
+        <div class="container my-4">
+            <!-- New Book Section -->
+            <h1>Nuovo Libro</h1>
             <!-- Author's Information Section -->
             <div class="row align-items-start">
                 <div class="col-6">
                     <div class="mb-3">
-                        <label for="text-1" class="form-label fw-bold">Nome Autore</label>
-                        <input type="text" class="form-control" id="text-1" placeholder="Inserisci il nome dell'autore">
+                        <label for="name" class="form-label fw-bold">Nome Autore</label>
+                        <input type="text" class="form-control" id="name" placeholder="Inserisci il nome dell'autore">
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="mb-3">
-                        <label for="text-2" class="form-label fw-bold">Cognome Autore</label>
-                        <input type="text" class="form-control" id="text-2" placeholder="Inserisci il cognome dell'autore">
+                        <label for="surname" class="form-label fw-bold">Cognome Autore</label>
+                        <input type="text" class="form-control" id="surname"
+                            placeholder="Inserisci il cognome dell'autore">
                     </div>
                 </div>
             </div>
             <!-- Book Titile Section -->
             <div class="mb-3">
-                <label for="text-3" class="form-label fw-bold">Titolo</label>
-                <input type="text" class="form-control" id="text-3" placeholder="Inserisci il titolo del libro">
+                <label for="title" class="form-label fw-bold">Titolo</label>
+                <input type="text" class="form-control" id="title" placeholder="Inserisci il titolo del libro">
                 <div class="form-text">Titolo versione italiana</div>
             </div>
+            <div class="row align-items-start">
+                <!-- Literary Genre Section -->
+                <div class="col-12 col-sm-4">
+                    <div class="mb-3">
+                        <label for="literary-genre" class="form-label fw-bold">Genere</label>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start" type="button"
+                                data-bs-toggle="dropdown" id="literary-genre" aria-expanded="false">
+                                Scegli il genere
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Saggistica</a></li>
+                                <li><a class="dropdown-item" href="#">Horror</a></li>
+                                <li><a class="dropdown-item" href="#">Thriller</a></li>
+                                <li><a class="dropdown-item" href="#">Giallo</a></li>
+                                <li><a class="dropdown-item" href="#">Rosa</a></li>
+                                <li><a class="dropdown-item" href="#">Fantasy</a></li>
+                                <li><a class="dropdown-item" href="#">Fantascenza</a></li>
+                                <li><a class="dropdown-item" href="#">Fumetti</a></li>
+                                <li><a class="dropdown-item" href="#">Graphic Novel</a></li>
+                                <li><a class="dropdown-item" href="#">Musica</a></li>
+                                <li><a class="dropdown-item" href="#">Spiritualità</a></li>
+                                <li><a class="dropdown-item" href="#">Young</a></li>
+                                <li><a class="dropdown-item" href="#">Young-adult</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Year of Publication Section -->
+                <div class="col-12 col-sm-4">
+                    <div class="mb-3">
+                        <label for="year" class="form-label fw-bold">Anno di Pubblicazione</label>
+                        <input type="number" class="form-control" id="year" placeholder="Inserisci l'anno">
+                    </div>
+                </div>
+                <!-- ISBN# Section -->
+                <div class="col-12 col-sm-4">
+                    <div class="mb-3">
+                        <label for="isbn" class="form-label fw-bold">ISBN#</label>
+                        <input type="number" class="form-control" id="isbn" placeholder="Inserisci il codice ISBN#">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Note Section -->
+            <div>
+                <div class="mb-3">
+                    <label for="note" class="form-label fw-bold">Note</label>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Inserisci evebtuali note sul libro"
+                            id="note" style="height: 100px"></textarea>
+                        <label for="note">Inserisci evebtuali note sul libro</label>
+                    </div>
+                </div>
+            </div>
+            <!-- Digital Disponibility Section -->
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault">
+                    Disponibile anche in digitale
+                </label>
+            </div>
+            <!-- Add Books Button -->
+            <div class="my-3">
+                <button type="button" class="btn btn-primary text-end ">Aggiungi Libri</button>
+            </div>
         </div>
-
-
     </main>
 
 </body>
