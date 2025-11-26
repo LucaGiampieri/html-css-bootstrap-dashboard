@@ -18,7 +18,7 @@
 </head>
 
 <body>
-     <!-- Header -->
+    <!-- Header -->
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -49,14 +49,40 @@
                             <a class="nav-link text-white-50 link-light" href="#">Help</a>
                         </li>
                     </ul>
-                    <!-- Navbar Search -->
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
-                        <button class="btn btn-outline-light" type="submit">Cerca</button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
+
+    <!-- Main -->
+    <main class="container my-4">
+        <!-- New Book Section -->
+        <h1>Nuovo Libro</h1>
+        <div class="container">
+            <!-- Author's Information Section -->
+            <div class="row align-items-start">
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="text-1" class="form-label fw-bold">Nome Autore</label>
+                        <input type="text" class="form-control" id="text-1" placeholder="Inserisci il nome dell'autore">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="mb-3">
+                        <label for="text-2" class="form-label fw-bold">Cognome Autore</label>
+                        <input type="text" class="form-control" id="text-2" placeholder="Inserisci il cognome dell'autore">
+                    </div>
+                </div>
+            </div>
+            <!-- Book Titile Section -->
+            <div class="mb-3">
+                <label for="text-3" class="form-label fw-bold">Titolo</label>
+                <input type="text" class="form-control" id="text-3" placeholder="Inserisci il titolo del libro">
+                <div class="form-text">Titolo versione italiana</div>
+            </div>
+        </div>
+
+
+    </main>
 
 </body>
